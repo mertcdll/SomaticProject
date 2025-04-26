@@ -1,0 +1,29 @@
+{
+  "output_folder": "/home/genwork2/Mert/somaticpip/ponouts",
+  "ref_fasta": "/home/genwork2/Mert/01.REFGEN/GRCh38/hg38.fa",
+  "ref_dict": "/home/genwork2/Mert/01.REFGEN/GRCh38/hg38.dict",
+  "interval_list": "/home/genwork2/Mert/somaticpip/ponouts/filtered_EPR.preprocessed.interval_list",
+  "pon_id": "EPR-SZB-493",
+  "normal_bams": [
+    "/mnt/gen100/PGDX/EPR-FIRST/23B1920078_t.BAM_EPR-RUO.bam",
+    "/mnt/gen100/PGDX/EPR-FIRST/245-24-AC_t.BAM_EPR-RUO.bam",
+    "/mnt/gen100/PGDX/EPR-FIRST/398-24-AE_t.BAM_EPR-RUO.bam",
+    "/mnt/gen100/PGDX/EPR-FIRST/404-24-RE_t.BAM_EPR-RUO.bam",
+    "/mnt/gen100/PGDX/EPR-FIRST/426-24-SB_t.BAM_EPR-RUO.bam",
+    "/mnt/gen100/PGDX/EPR-FIRST/AR-BAR-1235_t.BAM_EPR-RUO.bam",
+    "/mnt/gen100/PGDX/EPR-FIRST/nasrindemo_t.BAM_EPR-RUO.bam"
+  ],
+  "gc_correction": true,
+  "bin_length": 10000,
+  "blacklist_intervals": "/home/genwork2/Mert/gatk-workflows/resources_hg38/CNV_and_centromere_blacklist.hg38liftover.list",
+  "padding": 250,
+  "do_impute_zeros": true,
+  "number_of_eigensamples": 20,
+  "feature_query_lookahead": 1000000,
+  "minimum_interval_median_percentile": 10.0,
+  "maximum_zeros_in_sample_percentage": 5.0,
+  "maximum_zeros_in_interval_percentage": 5.0,
+  "extreme_sample_median_percentile": 2.5,
+  "extreme_outlier_truncation_percentile": 0.1,
+  "maximum_chunk_size": 16777216
+}

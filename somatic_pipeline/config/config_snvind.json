@@ -1,0 +1,59 @@
+{ "algotype": "bwtsw",
+  "index_fasta": false,
+  "aligner_threads": 40,
+  "remove_all_duplicates": true,
+  "remove_sequencing_duplicates": false,
+  "use_gatk_mark_duplicates": true,
+  "use_dragen": false,
+  "output_folder": "/home/genwork2/Mert/somaticpip",
+  "run_name": "test_run2",
+  "ref_fasta": "/home/genwork2/Mert/01.REFGEN/GRCh38/hg38.fa",
+  "ref_dict": "/home/genwork2/Mert/01.REFGEN/GRCh38/hg38.dict",
+  "interval_list": "/home/genwork2/Mert/bwa_dedup/sorted_BRCA_1_2.interval_list",
+  "scatter_count": 48,
+  "germline_resource": "/home/genwork2/Mert/gatk-workflows/resources_hg38/af-only-gnomad.hg38.vcf.gz", 
+  "index_image": "/home/genwork2/Mert/gatk-workflows/resources_hg38/hg38.img",
+  "downsampling_stride": null,
+  "panel_of_normals" : null,
+  "variants_for_contamination" : null,
+  "max_reads_per_alignment_start": null,
+  "max_suspicious_reads_per_alignment_start": null,
+  "max_population_af": null,
+  "lrom": true,
+  "interval_padding": 100,
+  "tumor_samples": [
+      {
+        "sample_id": "771-24-HOEt",
+        "r1": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R1_001.fastq.gz",
+        "r2": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R2_001.fastq.gz"
+      },
+      {
+        "sample_id": "771-24-HOEt1",
+        "r1": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R1_001.fastq.gz",
+        "r2": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R2_001.fastq.gz"
+      },
+      {
+        "sample_id": "771-24-HOEt2",
+        "r1": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R1_001.fastq.gz",
+        "r2": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R2_001.fastq.gz"
+      }
+
+  ],
+  "normal_samples":[
+    {
+      "sample_id": "771-24-HOEn",
+      "r1": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R1_001.fastq.gz",
+      "r2": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R2_001.fastq.gz"
+    },
+    {
+      "sample_id": "771-24-HOEn1",
+      "r1": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R1_001.fastq.gz",
+      "r2": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R2_001.fastq.gz"
+    },
+    {
+      "sample_id": "771-24-HOEn2",
+      "r1": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R1_001.fastq.gz",
+      "r2": "/home/genwork2/03.Fastq_Output/RUN181-BRCA-DUAL/BRCA-DUAL/771-24-HOE_S1_L004_R2_001.fastq.gz"
+    }
+  ]
+}

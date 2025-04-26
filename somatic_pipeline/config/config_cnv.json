@@ -1,0 +1,62 @@
+{ "algotype": "bwtsw",
+  "index_fasta": false,
+  "aligner_threads": 40,
+  "remove_all_duplicates": true,
+  "remove_sequencing_duplicates": false,
+  "use_gatk_mark_duplicates": true,
+  "use_dragen": false,
+  "output_folder": "/home/genwork2/Mert/somaticpip/test_cnv_run",
+  "run_name": "test_run_cnv",
+  "ref_fasta": "/home/genwork2/Mert/01.REFGEN/GRCh38/hg38.fa",
+  "ref_dict": "/home/genwork2/Mert/01.REFGEN/GRCh38/hg38.dict",
+  "interval_list": "/home/genwork2/Mert/gatk-workflows/EPRBAMS/245-24-AC/filtered_EPR.interval_list",
+  "common_sites": "/home/genwork2/Mert/gatk-workflows/resources_hg38/EPR_common_snps_filtered.interval_list",
+  "pon": "/home/genwork2/Mert/somaticpip/ponouts/EPR-SZB-493.pon.hdf5",
+  "blacklist_intervals": "/home/genwork2/Mert/gatk-workflows/resources_hg38/CNV_and_centromere_blacklist.hg38liftover.list",
+  "minimum_base_quality": 30,
+  "number_of_eigensamples": null,
+  "minimum_total_allele_count_case": null,
+  "minimum_total_allele_count_normal": null,
+  "genotyping_homozygous_log_ratio_threshold": null,
+  "genotyping_base_error_rate": null,
+  "maximum_number_of_segments_per_chromosome": null,
+  "kernel_variance_copy_ratio": null,
+  "kernel_variance_allele_fraction": null,
+  "kernel_scaling_allele_fraction": null,
+  "kernel_approximation_dimension": null,
+  "window_size": [8,16,32,64,128,256],
+  "number_of_changepoints_penalty_factor": null,
+  "minor_allele_fraction_prior_alpha": null,
+  "number_of_samples_copy_ratio": null,
+  "number_of_burn_in_samples_copy_ratio": null,
+  "number_of_samples_allele_fraction": null,
+  "number_of_burn_in_samples_allele_fraction": null,
+  "smoothing_credible_interval_threshold_copy_ratio": null,
+  "smoothing_credible_interval_threshold_allele_fraction": null,
+  "maximum_number_of_smoothing_iterations": null,
+  "number_of_smoothing_iterations_per_fit": null,
+  "neutral_segment_copy_ratio_lower_bound": null,
+  "neutral_segment_copy_ratio_upper_bound": null,
+  "outlier_neutral_segment_copy_ratio_z_score_threshold": null,
+  "calling_copy_ratio_z_score_threshold": null,
+  "minimum_contig_length": null,
+  "maximum_copy_ratio": null,
+  "point_size_copy_ratio": null,
+  "point_size_allele_fraction": null,
+  "tumor_samples": [
+    {
+      "sample_id": "245-24-AC_t",
+      "r1": "/mnt/gen100/PGDX/EPR-FIRST/245-24-AC_t.FASTQ_EPR-RUO_R1.fastq.gz",
+      "r2": "/mnt/gen100/PGDX/EPR-FIRST/245-24-AC_t.FASTQ_EPR-RUO_R2.fastq.gz"
+    }
+
+  ],
+  "normal_samples": [
+
+    {
+      "sample_id": "398-24-AE_t",
+      "r1": "/mnt/gen100/PGDX/EPR-FIRST/398-24-AE_t.FASTQ_EPR-RUO_R1.fastq.gz",
+      "r2": "/mnt/gen100/PGDX/EPR-FIRST/398-24-AE_t.FASTQ_EPR-RUO_R2.fastq.gz"
+    }
+  ]
+}
