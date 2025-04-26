@@ -1,0 +1,2 @@
+[console_scripts]
+somatic-pipeline = somatic_pipeline.cli.main:cli

@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "somatic_pipeline"         
+version = "0.1.0"                 
+description = "Automated somatic variant calling workflows using GATK modules"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name="Mert Celik", email="mertcelik16@gmail.com" }]
+
+[project.scripts]
+somatic-pipeline = "somatic_pipeline.cli.main:cli"

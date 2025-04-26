@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: somatic_pipeline
+Version: 0.1.0
+Summary: Automated somatic variant calling workflows using GATK modules
+Author-email: Mert Celik <mertcelik16@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
